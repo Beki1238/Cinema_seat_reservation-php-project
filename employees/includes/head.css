@@ -1,0 +1,69 @@
+ /* Custom styles for header */
+ .main-header {
+  background-color: #ffff; /* Dark Orange */
+}
+
+/* Adjustments to the sidebar and content when toggled */
+.sidebar {
+  transition: all 0.3s ease;
+}
+
+.sidebar.close {
+  width: 80px;
+}
+
+.content-wrapper {
+  transition: all 0.3s ease;
+}
+
+.sidebar.close ~ .content-wrapper {
+  margin-left: 80px;
+}
+
+/* Hide text when sidebar is collapsed */
+.sidebar.close .nav-link p {
+  display: none;
+}
+
+/* Ensure the icon is visible and set a proper color */
+.nav-icon {
+  color: #fff; /* White icon color */
+  font-size: 18px; /* Set a visible size */
+}
+
+/* Optionally, adjust hover styles for icons */
+.nav-link:hover .nav-icon {
+  color: #f39c12; /* Change icon color on hover */
+}
+
+/* Adjust the brand link */
+/* Brand link: Flexbox for horizontal alignment */
+.brand-link {
+display: flex;
+align-items: center; /* Vertically align logo and text */
+padding: 10px 15px; /* Adjust padding */
+}
+
+/* Logo: Set size */
+.brand-image {
+max-width: 40px; /* Logo width */
+max-height: 40px; /* Logo height */
+margin-right: 10px; /* Spacing between logo and text */
+}
+
+/* Text styling */
+.brand-text {
+font-size: 16px; /* Adjust font size for visibility */
+white-space: nowrap; /* Prevent text wrapping */
+}
+
+/* Collapsed Sidebar: Hide text */
+.sidebar.close .brand-text {
+display: none; /* Hide text */
+}
+
+/* Keep the logo visible when collapsed */
+.sidebar.close .brand-image {
+max-width: 40px; /* Maintain consistent size */
+max-height: 40px;
+}

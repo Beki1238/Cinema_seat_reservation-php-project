@@ -1,0 +1,48 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+table, th, td {
+    border: 1px solid #ddd;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
+.status-pending {
+    color: orange;
+}
+.status-confirmed {
+    color: green;
+}
+.status-canceled {
+    color: red;
+}
+img {
+    max-width: 100px;
+    height: auto;
+}
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+.btn {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+}
+.btn-approve {
+    background-color: green;
+}
+.btn-reject {
+    background-color: red;
+}
+.btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
