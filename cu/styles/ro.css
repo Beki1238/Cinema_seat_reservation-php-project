@@ -1,0 +1,72 @@
+
+.no-showtime-message {
+    background-color: #ffdddd;
+    color: #a6041a;
+    padding: 1rem;
+    margin: 2rem 0;
+    text-align: center;
+    border: 1px solid #a6041a;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+h1 {
+    text-align: center;
+    color: var(--bg-color);
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px var(--main-color);
+}
+
+.showtime-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.showtime-item {
+    position: relative;
+    background: rgba(0, 0, 0, 0.7); /* Darken the background */
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    color: var(--bg-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.showtime-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.showtime-details h3 {
+    font-size: 1.5rem;
+    color: var(--main-color);
+    margin-bottom: 0.5rem;
+}
+
+.showtime-details p {
+    margin: 0.4rem 0;
+    font-size: 1rem;
+}
+
+.btn {
+    padding: 0.8rem;
+    text-align: center;
+    background: var(--main-color);
+    color: var(--bg-color);
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #a6041a;
+}

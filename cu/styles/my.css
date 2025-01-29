@@ -1,0 +1,121 @@
+body {
+    background: linear-gradient(135deg, #1c1c1c, #363636);
+    color: #f1f1f1;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #ffcc00;
+    margin-bottom: 20px;
+}
+.cancel-button {
+    background-color: #f44336; /* Red color for enabled button */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cancel-button[disabled] {
+    background-color: #cccccc; /* Gray color for disabled button */
+    cursor: not-allowed;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: #2a2a2a; /* Table background */
+    border: 1px solid #444;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #444;
+    color: #ffcc00; /* Table header color */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+tr:nth-child(even) {
+    background: #3b3b3b; /* Alternating row color */
+}
+
+tr:nth-child(odd) {
+    background: #2a2a2a;
+}
+
+tr:hover {
+    background: #555; /* Row hover effect */
+    transition: background 0.3s ease;
+}
+
+.status-pending {
+    color: #ffcc00; /* Pending status color */
+}
+
+.status-completed {
+    color: #28a745; /* Completed status color */
+}
+
+.status-cancelled {
+    color: #dc3545; /* Cancelled status color */
+}
+
+a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.upload-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.upload-form input[type="file"] {
+    color: #f1f1f1;
+}
+
+.upload-form button {
+    padding: 5px 10px;
+    background: #ffcc00;
+    border: none;
+    color: #000;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.upload-form button:hover {
+    background: #e6b800;
+}
+
+img {
+    border: 2px solid #ffcc00;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+p {
+    text-align: center;
+    font-size: 1.2rem;
+}
